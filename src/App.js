@@ -1,7 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import "./App.css";
 
 function App() {
+  window.Moengage.add_first_name("Dominick");
+  window.Moengage.add_last_name("Cobb");
+  window.Moengage.add_email("dom@level5.com");
+  window.Moengage.add_mobile("+12399999999");
+  window.Moengage.add_user_name("Dominick (Dom) Cobb"); // Full name for user
+  window.Moengage.add_gender("M");
+  window.Moengage.add_birthday(new Date(1980, 2, 31));
+
+  window.Moengage.add_unique_user_id("dom@level5.com");
+
+  window.Moengage.track_event("Sample", { integration: "React" });
+
+  console.log("Success, rendering..");
+
   return (
     <div className="App">
       <header className="App-header">
